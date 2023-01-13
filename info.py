@@ -14,17 +14,17 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '28445434'))
 API_HASH = environ.get('API_HASH', '8cc2507d26a86d506a65e9af474e2a0f')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5750965723:AAGj-QRuV51Xx0PQOvyNkN-IYqLMtF7YA4E")
+BOT_TOKEN = environ.get('BOT_TOKEN', "5855639065:AAHf6quh3zXclWffWP_G69muH56Yk_b9Us0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/b806ad314d0c415571bde.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/2c69dd2abd34484066cd6.jpg https://telegra.ph/file/119e2efb3eefb1ba09c9c.jpg https://telegra.ph/file/43a2894ded0adce5cdfb2.jpg https://telegra.ph/file/39cf8f9582e38f6b6c6d0.jpg https://telegra.ph/file/5ff0a3e2c57f537b5578b.jpg https://telegra.ph/file/cac93a49a9f46a48e9407.jpg https://telegra.ph/file/70186bd6a4e6a340e6d2d.jpg https://telegra.ph/file/6e4f031d926f7700620de.jpg https://telegra.ph/file/8b80c7415c91dd0ab8ddd.jpg https://telegra.ph/file/e23621e56620a2fce381c.jpg https://telegra.ph/file/10dc412061587e134724c.jpg https://telegra.ph/file/7f615cb92824621c927d1.jpg https://telegra.ph/file/2094686f491d441abcf70.jpg https://telegra.ph/file/c5eb5ba06b412053a330e.jpg https://telegra.ph/file/b157c91422be6f65e1c97.jpg https://telegra.ph/file/37aee885163eff9d6e8f0.jpg https://telegra.ph/file/7d1b551369902a01aaf2c.jpg https://telegra.ph/file/a2a851966c6f87cbb32f0.jpg https://telegra.ph/file/4597762206ab870ac0512.jpg https://telegra.ph/file/147a1e9dc050027b7f14c.jpg https://telegra.ph/file/33d5224a798e9c8c275c7.jpg https://telegra.ph/file/336b9c6bd6783794c452f.jpg https://telegra.ph/file/f120059caa49cad4aa4d1.jpg https://telegra.ph/file/b74ec255355e7648b50ed.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1366310017 1315219809').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001754951124').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -44,7 +44,7 @@ IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [HAnime Store](https://t.me/HenTaii_Store)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "ɴᴀᴍᴇ: <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [HAnime Store](https://t.me/HenTaii_Store)</b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @GreyMatter_Bots")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ : {runtime} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n🔖 sʜᴏʀᴛ : {plot} \n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : @CinemaRoom")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
