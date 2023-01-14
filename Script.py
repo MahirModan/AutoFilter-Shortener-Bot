@@ -13,10 +13,12 @@ def is_enabled(value, default):
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/Hentaii_Store')
     
-    START_TXT = environ.get("START_TXT", '''<b>𝐇𝐄𝐋𝐋𝐎 𝐃𝐀𝐃𝐃𝐘 {} </b>''')
+    START_TXT = environ.get("START_TXT", '''<b>𝐇𝐄𝐋𝐋𝐎 {} </b>''')
     
     HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.
+<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
+» Contact Me t.me/l_Damon_l<b>"""
     
     ABOUT_TXT = """<b><i>ᴍʏ ɴᴀᴍᴇ : <b>Max1000</b></a>\n
 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HenTaii_Store><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n</b></i>"""
