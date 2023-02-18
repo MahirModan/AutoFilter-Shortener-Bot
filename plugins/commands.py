@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/Hentaii_Store')
+                InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/CinemaRoom')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -40,7 +40,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/Hentaii_Store'),
+            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/CinemaRoom'),
             InlineKeyboardButton('𝐇𝐄𝐋𝐏', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -83,7 +83,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/Hentaii_Store'),
+            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒', url='https://t.me/CinemaRoom'),
             InlineKeyboardButton('𝐇𝐄𝐋𝐏', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -234,7 +234,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄', url='https://t.me/Hentaii_Store') ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄', url='https://t.me/CinemaRoom') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
