@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/Hentaii_Store')
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/CinemaRoom')
     
     START_TXT = environ.get("START_TXT", '''<b>𝐇𝐄𝐋𝐋𝐎 {} </b>''')
     
@@ -21,7 +21,7 @@ class script(object):
 » Contact Me t.me/l_Damon_l<b>"""
     
     ABOUT_TXT = """<b><i>ᴍʏ ɴᴀᴍᴇ : <b>Max1000</b></a>\n
-ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HenTaii_Store><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n</b></i>"""
+ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/CinemaRoom><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n</b></i>"""
     
     SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
 » I will Create One Bot For You<b>
@@ -52,7 +52,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/HenTaii_Store)</code>
+<code>[Button Text](buttonurl:https://t.me/CinemaRoom)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
