@@ -11,17 +11,15 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/CinemaRoom')
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/+V8B--M-JizgzMDI1')
     
     START_TXT = environ.get("START_TXT", '''<b>𝐇𝐄𝐋𝐋𝐎 {} </b>''')
     
     HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.
-<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
-» Contact Me t.me/l_Damon_l<b>"""
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     
-    ABOUT_TXT = """<b><i>ᴍʏ ɴᴀᴍᴇ : <b>Max1000</b></a>\n
-ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/CinemaRoom><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n</b></i>"""
+    ABOUT_TXT = """<b><i>ᴍʏ ɴᴀᴍᴇ : <b>Max</b></a>\n
+ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/AnimeToon_Hindi><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n</b></i>"""
     
     SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
 » I will Create One Bot For You<b>
@@ -52,7 +50,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/CinemaRoom)</code>
+<code>[Button Text](buttonurl:https://t.me/AnimeToon_Hindi)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
